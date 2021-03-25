@@ -1,63 +1,103 @@
-*{
-  padding: 0;
-  margin: 0;
+* {
+    padding: 0;
+    margin: 0;
 }
 
-ul, ol {
-  list-style: none;
+ul,
+ol {
+    list-style: none;
 }
 section {
-  padding: 1.25em;
+    padding: 1.25em;
 }
-.habit  {
-  display: flex;
-  align-items: center;
-  padding: 1em 0;
-}
-
-.habit .habit-name  {
-min-width: 150px;
-  font-size: 1.25rem;
-  font-size: bold;
+.habit {
+    display: flex;
+    align-items: center;
+    padding: 1em 0;
 }
 
+.habit .habit-name {
+    min-width: 150px;
+    font-size: 1.25rem;
+    font-size: bold;
+}
+.habit-total-count,
 .habit .habit-count {
-  display: inline-block;
-  margin: 0 1em;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  border-radius: 50%;
-  background-color: orange;
-  text-align: center;
-  color: white;
-  font-weight: bold;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+    display: inline-block;
+    margin: 0 1em;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    background-color: orange;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
-.habit .habit-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  font-size: 1rem;
-  background-color: transparent;
-  border: none;
-  margin: 0 1em;
-  font-size: 1rem;
-  font-weight: 500;
+.habit .habit-btn,
+.submit-habit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    margin: 0 1em;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .habit .habit-increase {
-  background-color: lightpink;
+    background-color: lightpink;
 }
 .habit .habit-decrease {
-  background-color: skyblue;
+    background-color: skyblue;
 }
 .habit .habit-delete {
-  background-color: gold;
-} 
+    background-color: gold;
+}
+.addhabit-form {
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+}
+.input-habit {
+    width: 40%;
+    max-width: 200px;
+    padding: 0.8em 0.5em;
+    border-radius: 5px;
+    border: 1px solid gray;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.submit-habit {
+    padding: 1.155em 2em;
+    color: white;
+    border-radius: 5px;
+    background-color: lightseagreen;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 1.25em 1em 1em;
+    margin-bottom: 1em;
+    border-bottom: 3px dashed rgb(255, 211, 211);
+}
+
+.habit-header-title {
+    font-size: 1.25rem;
+}
