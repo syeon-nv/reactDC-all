@@ -1,0 +1,63 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+section {
+  padding: 1.25em;
+}
+.habit  {
+  display: flex;
+  align-items: center;
+  padding: 1em 0;
+}
+
+.habit .habit-name  {
+min-width: 150px;
+  font-size: 1.25rem;
+  font-size: bold;
+}
+
+.habit .habit-count {
+  display: inline-block;
+  margin: 0 1em;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  background-color: orange;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.habit .habit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+  background-color: transparent;
+  border: none;
+  margin: 0 1em;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.habit .habit-increase {
+  background-color: lightpink;
+}
+.habit .habit-decrease {
+  background-color: skyblue;
+}
+.habit .habit-delete {
+  background-color: gold;
+} 
