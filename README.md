@@ -6,3 +6,4 @@
 | **02** | 2021-03-25 |      **rcc**      | props와 React.createRef()를 통한 데이터 바인딩 연습     | 😭 좀 더 연습 필요                                        |
 |   \*   |     \*     |      **rcc**      | RCC List 수정 및 counting 작업 추가                     | 🌻 일단은 오류 없이 동작한다. 하지만 아직 어색한 단계!    |
 | **03** | 2021-03-26 | **pureComponent** | Pure Component 를 이용하여 성능개선을 시도              | 🌱 RCC에서 생성한 프로젝트를 pure component 로 만들어보기 |
+|   \*   |     \*     | **pureComponent** | 선택된 habit 의 값을 변경하려는 시도                    | 😭 컴포넌트 간의 props 전달 방식을 좀 더 연습 필요        |
