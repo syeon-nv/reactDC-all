@@ -1,12 +1,12 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 
-class AddForm extends Component {
-  // createRef -- 나중에 따로 추가 공부할 것
+class AddForm extends PureComponent {
+  // addForm.jsx :: 해당 컴포넌트는 한 번 생성된 이후에는 따로 할당 받아야 할 props 가 없기 때문에 pureComponent를 상속하도록 해, 성능 개선을 꾀해야 함
   formRef = React.createRef();
   inputRef = React.createRef();
 
   onSubmit = (event) => {
-    event.preventDefault(); // 기본 브라우저 이벤트 submit 시, 데이터가 초기화 되는 것을 방지
+    event.preventDefault();
     const val = this.inputRef.current.value;
     val && this.props.onAdd(val);
     this.formRef.current.reset();
@@ -25,10 +25,6 @@ class AddForm extends Component {
           placeholder="Enter your new habit!"
           ref={this.inputRef}
         />
-        {/* 
-                    form에서 submit 을 하고 있기 때문에 
-                    button 에 따로 클릭 이벤트가 필요 없음
-                 */}
 
         <button className="submit-habit">Add</button>
       </form>

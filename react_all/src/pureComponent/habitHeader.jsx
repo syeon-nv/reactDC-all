@@ -7,12 +7,15 @@ class HabitHeader extends Component {
     return (
       <header>
         <h2 className="habit-header-title">My Habits</h2>
-        <p className="bl-habit-count">
-          total count : <span className="habit-count">{totalHabitCount}</span>
-        </p>
-        <p className="bl-habit-count">
-          ~ing habits : <span className="habit-count">{processHabitCount}</span>
-        </p>
+        <div className="ly-habit-counts">
+          <p className="bl-habit-count">
+            total count : <span className="habit-count">{totalHabitCount}</span>
+          </p>
+          <p className="bl-habit-count">
+            ~ing habits :
+            <span className="habit-count">{processHabitCount}</span>
+          </p>
+        </div>
       </header>
     );
   }
