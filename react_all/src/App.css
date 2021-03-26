@@ -8,6 +8,7 @@
     padding-left: 1em;
     padding-bottom: .25em;
     border-left: 10px solid lightblue;
+    color: steelblue;
 }
 
 ul,
@@ -15,8 +16,9 @@ ol {
     list-style: none;
 }
 section {
-    padding: 1.25em;
+    padding: 2em 1.25em;
     padding-left: 2em;
+    border-bottom: 15px solid #eee;
 }
 .habit {
     display: flex;
