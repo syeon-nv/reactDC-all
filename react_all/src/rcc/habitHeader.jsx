@@ -1,14 +1,21 @@
 import React, { Component } from "react";
 
 class HabitHeader extends Component {
-    render() {
-        return (
-            <header>
-                <h2 className='habit-header-title'>My Habits</h2>
-                <span className='habit-total-count'>0</span>
-            </header>
-        );
-    }
+  render() {
+    console.log(this.props);
+    const { totalHabitCount, processHabitCount } = this.props;
+    return (
+      <header>
+        <h2 className="habit-header-title">My Habits</h2>
+        <p className="bl-habit-count">
+          total count : <span className="habit-count">{totalHabitCount}</span>
+        </p>
+        <p className="bl-habit-count">
+          ~ing habits : <span className="habit-count">{processHabitCount}</span>
+        </p>
+      </header>
+    );
+  }
 }
 
 export default HabitHeader;

@@ -3,25 +3,52 @@
     margin: 0;
 }
 
+.sec_title {
+    margin-left: -1em;
+    padding-left: 1em;
+    padding-bottom: .25em;
+    border-left: 10px solid lightblue;
+}
+
 ul,
 ol {
     list-style: none;
 }
 section {
     padding: 1.25em;
+    padding-left: 2em;
 }
 .habit {
     display: flex;
     align-items: center;
     padding: 1em 0;
+    position: relative;
 }
-
+.habit::before{
+    content: "*";
+    position: absolute;
+    top: 50%;
+    left: -1em;
+    color: orange;
+    transform: translateY(-28%);
+    -webkit-transform: translateY(-28%);
+    -moz-transform: translateY(-28%);
+    -ms-transform: translateY(-28%);
+    -o-transform: translateY(-28%);
+}
+.simple-habit {
+    padding-left: 1em;
+}
+.simple-habit::before {
+    left: 0;
+}
 .habit .habit-name {
-    min-width: 150px;
+    min-width: 120px;
+    width: 30%;
     font-size: 1.25rem;
-    font-size: bold;
+    font-weight: bold;
 }
-.habit-total-count,
+.habit-count,
 .habit .habit-count {
     display: inline-block;
     margin: 0 1em;
@@ -71,18 +98,38 @@ section {
 .input-habit {
     width: 40%;
     max-width: 200px;
-    padding: 0.8em 0.5em;
+    padding: 1em 0.8em;
     border-radius: 5px;
     border: 1px solid gray;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    transition: all .25s ease;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
 }
+.input-habit:focus {
+    outline-color: #20b2aa;
+    background-color: rgba(32, 178, 170, 0.08);
+    outline-width: 2px;
+    transition: all .25s ease;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+}
+
 .submit-habit {
-    padding: 1.155em 2em;
+    width: 90px;
+    padding: 1.355em 2em;
     color: white;
     border-radius: 5px;
+    font-weight: bold;
+    line-height: 1;
+    font-size: 1rem;
     background-color: lightseagreen;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -100,4 +147,11 @@ header {
 
 .habit-header-title {
     font-size: 1.25rem;
+}
+
+
+.bl-habit-count {
+    padding-left: 1.25em;
+    font-weight: 500;
+    color: gray;
 }

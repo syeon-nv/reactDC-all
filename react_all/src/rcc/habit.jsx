@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 class Habit extends Component {
-  //    habitList 에서 받은 props : onIncrement, onDecrement, onDelete / habit / key
+  // habitList 에서 받은 props : onIncrement, onDecrement, onDelete / habit / key
   // onIncrement, onDecrement, onDelete : state 값을 변경할 함수들
   // habit: 하나의 컴포넌트(현재의 컴포넌트)
 
@@ -12,7 +12,7 @@ class Habit extends Component {
   handleDecrement = () => {
     this.props.onDecrement(this.props.habit);
   };
-  handleDelete = () => {
+  handleDelete = (habit) => {
     this.props.onDelete(this.props.habit);
   };
   render() {
